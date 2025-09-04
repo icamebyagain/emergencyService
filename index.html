@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>HelpLine</title>
+    <title>Emergency Service Directory</title>
 
     <!-- daisiUI & tailwind  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -20,34 +20,246 @@
 
 </head>
 
-<body class="max-w-[1920px] max-h-[1613px]">
-    <nav class="h-[60px]">
+<body class=" min-h-[1613px] bg-[#f5fff6]">
+    <nav class="h-[60px] mb-[100px] md:mb-10">
         <div class="flex flex-col md:flex-row justify-between items-center px-[60px] py-[24px] gap-y-4 md:gap-y-0">
-           
+
             <!-- Logo and Heading -->
             <div class="flex h-[52px] ">
-            <img src="assets/logo.png" alt="">
-            <h2 class="text-[#006747] font-extrabold ml-3">Emergency <br> Service</h2>
-        </div>
-
-
-        <!-- Right-side Counters and Button -->
-        <div class="flex h-[52px] gap-[20px] ">
-            <div class="flex justify-center items-center gap-3 h-[52px] min-w-[127px] p-[12px] bg-[#41ff6b1a] rounded-4xl">
-                <p class="text-[16px] font-bold">0</p> 
-                <img src="assets/heart.png" class="w-[30px] h-[30px]">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-[#006747] font-extrabold ml-3">Emergency <br> Service</h2>
             </div>
 
-            <div class="flex justify-center gap-3 items-center h-[52px] min-w-[127px] p-[12px] bg-[#41ff6b1a] rounded-4xl ">
-                <p class="text-[16px] font-bold ">100</p>
-                <img src="assets/coin.png" class="w-[30px] h-[30px]">
+
+            <!-- Right-side Counters and Button -->
+            <div class="flex h-[52px] gap-[20px] ">
+                <div
+                    class="flex justify-center items-center gap-3 h-[52px] min-w-[127px] p-[12px] bg-[#41ff6b1a] rounded-4xl">
+                    <p class="text-[16px] font-bold">0</p>
+                    <img src="assets/heart.png" class="w-[30px] h-[30px]">
+                </div>
+
+                <div
+                    class="flex justify-center gap-3 items-center h-[52px] min-w-[127px] p-[12px] bg-[#41ff6b1a] rounded-4xl ">
+                    <p class="text-[16px] font-bold ">100</p>
+                    <img src="assets/coin.png" class="w-[30px] h-[30px]">
+                </div>
+                <!-- <button
+                    class="flex items-center justify-center gap-2 h-[52px] bg-[#00A63E] w-[127px] text-white text-[16px] font-semibold rounded-4xl hover:bg-[#009135] transition-all duration-200 hover:scale-105 hover:shadow-md cursor-pointer"><span
+                        class="text-[16px]">2</span>Copy</button> -->
+                <p
+                    class="flex items-center justify-center gap-2 h-[52px] bg-[#00A63E] w-[127px] text-white text-[16px] font-semibold rounded-4xl">
+                    <span class="text-[16px]">2</span>Copy
+                </p>
             </div>
-            <button class="flex items-center justify-center gap-2 h-[52px] bg-[#00A63E] w-[127px] text-white text-[16px] font-semibold rounded-4xl"><span class="text-[16px]">2</span>Copy</button>
-        </div>
         </div>
     </nav>
 
+    <!-- banner section -->
+    <section
+        class="min-h-[239px] w-full bg-[linear-gradient(90deg,#013223,#006747_50%,#013223_100%)] flex justify-center">
+        <div class="px-4 sm:px-8 md:px-[60px] py-6 text-center flex flex-col items-center gap-4 sm:gap-[11px]">
+            <img src="assets/logo-dark.png" class=" h-[92px] w-[92px]">
+            <h1 class="text-white text-[25px] md:text-[40px] font-bold">Emergency Service Directory</h1>
+            <p class="text-white text-[20px] font-semibold ">Government Emergency Services at Your Fingertip –A Project
+                by Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </section>
 
+    <!-- card section  -->
+    <section class="bg-[#f5fff6] min-h-[1440px]  flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-4 auto-rows-[360px] gap-6 p-10">
+
+
+            <div class="h-[360px] max-w-[430px] w-full bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+             <div class=" max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg "> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+
+             <div class=" max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+
+            <!-- call history  --> <!-- call history  --> <!-- call history  --> <!-- call history  --> <!-- call history  -->
+             <div class=" row-span-3 bg-white rounded-l-xl shadow-xl p-6 order-last md:order-none max-w-[400px]">
+                    <div class="flex justify-between items-center">
+                    <h2> <i class="fa-regular fa-clock"></i> Call History</h2>
+                    <button class="btn h-[52px] px-[36px] py-[12px] rounded-4xl bg-[#00A63E]">Clear</button>
+                    </div>
+                </div>
+
+
+
+
+
+             <div class="max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+
+             <div class="max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+             <div class=" max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+             <div class=" max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+             <div class=" max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+             <div class=" max-w-[430px] bg-white rounded-xl shadow-xl p-5">
+                <div class="h-[60px] w-[60px] p-[14px] bg-[#ffe3e2] rounded-xl mb-4">
+                    <img src="assets/emergency.png" alt="">
+                </div>
+                <h2 class="text-[24px] font-semibold mb-1">National Emergency Number</h2>
+                <p class="text-[18px] font-semibold mb-3">National Emergency</p>
+                <h2 class="text-[32px] font-bold">999</h2>
+                <div class="bg-[#f2f2f2] w-[70px] rounded-2xl px-[16px] py-[6px] mb-4">
+                    <p class="text-center text-[18px]">All </p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="btn w-1/2 bg-white border text-[#acb2af] rounded-lg"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="btn w-1/2 bg-[#00a63e] text-white rounded-lg"> <i class="fa-solid fa-phone "></i> Call</button>
+                </div>
+            </div>
+
+
+
+            
+               
+
+            
+
+
+        </div>
+
+
+
+    </section>
 
 </body>
 
