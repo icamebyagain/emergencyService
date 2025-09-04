@@ -71,13 +71,21 @@
             });
         }
 
+
+
+
         // reuseable function to copy paste 
         function setupCopy(copyBtnId, numberId) {
             document.getElementById(copyBtnId).addEventListener("click", function () {
                 const number = document.getElementById(numberId).innerText;
-
+                const currentCopy = parseInt(document.getElementById('copyCount').innerText)
                 navigator.clipboard.writeText(number).then(() => {
                     alert("Copied: " + number);
+
+                
+                // console.log(currentHearts)
+                updateCopy = currentCopy + 1
+                document.getElementById('copyCount').innerText = updateCopy
                 });
             });
         }
