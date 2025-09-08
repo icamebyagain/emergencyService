@@ -25,7 +25,7 @@
 
 
 
-        // reuseable function for coins 
+        // reuseable function for coins  & push TO call history
 
         function coinChanger(callerId, numberId, headingId) {
             document.getElementById(callerId).addEventListener("click", function () {
@@ -36,12 +36,10 @@
                 if (availableCoins >= 20) {
                     const updateCoin = availableCoins - 20;
                     document.getElementById('availableCoin').innerText = updateCoin;
-                    alert("Calling " + number);
-                } else {
-                    alert("Insufficient coins! Please reload");
-                }
+                    alert("Calling...... " + number);
 
-                // push call history
+
+                    // push call history
                 const callDataHis = {
                     name: heading,
                     number: number,
@@ -68,6 +66,13 @@
                     `;
                 callhistryContainer.appendChild(div);
 
+
+
+                } else {
+                    alert("Insufficient coins! Please reload");
+                }
+
+                
             });
         }
 
